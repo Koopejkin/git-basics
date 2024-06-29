@@ -18,9 +18,8 @@
 
 ```mermaid 
  flowchart TD;
- A[untracked] -- git add --> B[staged + tracked];
- B-- git commit --> С[tracked];
+ A[untracked] -- git add --> B{staged + tracked};
+ B-- git commit --> С[tracked]C[tracked]-- Изменения --> D[modified];
  B-- Изменения --> D[modified];
- C[tracked]-- Изменения --> D[modified];
  D-- git add --> B[staged + tracked]; 
 ```
