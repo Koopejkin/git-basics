@@ -17,7 +17,7 @@
 # Схема изменения статусов файлов в Git.
 
 ```mermaid 
- graph TD;
+ flowchart TD;
  A"untracked" -- git add --> B"staged + tracked";
  B-- git commit -->С "tracked";
  B-- Изменения -->D;
