@@ -16,11 +16,11 @@
 
 # Схема изменения статусов файлов в Git.
 
-``mermaid 
+```mermaid 
  graph TD;
  A"untracked" -- git add --> B"staged + tracked";
- D-- git add --> B;
- B-- git commit --> С "tracked";
- B-- Изменения -->D
- C-- Изменения --> D "modified"; 
-``
+ D-- git add -->B;
+ B-- git commit -->С "tracked";
+ B-- Изменения -->D;
+ C-- Изменения -->D "modified"; 
+```
